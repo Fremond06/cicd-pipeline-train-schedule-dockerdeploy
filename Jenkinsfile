@@ -8,7 +8,7 @@ pipeline {
                 archiveArtifacts artifacts: 'dist/trainSchedule.zip'
             }
         }
-        stage('Push Docker Image') {
+        stage('Build Docker Image') {
             when {
                 branch 'master'
             }
